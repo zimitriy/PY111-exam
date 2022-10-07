@@ -12,10 +12,10 @@ class MyTestCase(unittest.TestCase):
         while a > 0:
             out.append(arr[a])
             a = int(a // 1.7)
-        # self.assertEqual(
-        #     sorted(arr),
-        #     sorter.sort(arr)
-        # )
+        self.assertEqual(
+            sorted(arr),
+            sorter.sort(arr)
+        )
 
 
 if __name__ == '__main__':
