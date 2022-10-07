@@ -12,6 +12,7 @@ class MyTestCase(unittest.TestCase):
         while a > 0:
             out.append(arr[a])
             a = int(a // 1.7)
+            out.sort()
         self.assertEqual(
             sorted(arr),
             sorter.sort(arr)
